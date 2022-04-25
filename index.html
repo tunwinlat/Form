@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Form</title>
+</head>
+
+<body>
+    <article>
+        <header>
+            <h1>Lecture 7 Lab:Web Form</h1>
+            <h4>Fields with * are required</h4>
+        </header>
+        <form action="https://formspree.io/f/mdobpkwe" method="post">
+           
+        <fieldset>
+            <legend> Your Personal Profile</legend>
+
+            <div>
+                <label for="FullName*:">Full Name*:</label>
+                <input type="text" name="FullName*:" placeholder="First and last name" required>
+            </div>
+
+
+            <div>
+                <label for="Email Address*:">Email Address*:</label>
+                <input type="email" name="Email Address*:" placeholder="someone@someone.com" required>
+            </div>
+
+            <div>
+                <label for="Current study:">Current Study:</label>
+                <input type="text" name="Current study:" value="Douglas College" required>
+            </div>
+
+            <div>
+                <label for="Age:">Age:</label>
+                <input type="number" value="20">
+
+            </div>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Your Quiz</legend>
+
+            <div>
+                <label form="question">1.What is the result of the following question?</label>
+            </div>
+            <div>
+                <label form="question"> 2<sup>2</sup><span style='font-size:20px;'>&#215;</span>5=</label>
+                <input name="answer" type="number" />
+            </div>
+            <label form="question">2. What does th acronym W3C stand for?</label>
+            <SELECT NAME=" 3rd World War Coalition">
+                <OPTION> 3rd World War Coalition
+                <OPTION> World Wide WarCraft
+                <OPTION> World Wide Web Consortium
+                <OPTION> I’m afraid to answer it
+            </SELECT>
+            <div>
+                <label form="question">3. CSS is an abbrevation of</label>
+                <input type="text"> style sheet
+            </div>
+            <div>
+                <label form="question">4. Select all the(scripting) languages we learn in CSIS 1280</label><br>
+                <INPUT TYPE="checkbox" NAME="HTML">HTML
+                <INPUT TYPE="checkbox" NAME="CSS">CSS
+                <INPUT TYPE="checkbox" NAME="javascript">JavaScript
+                <INPUT TYPE="checkbox" NAME="php">PHP
+                <INPUT TYPE="checkbox" NAME="C#">C#
+                <INPUT TYPE="checkbox" NAME="java">Java
+
+            </div>
+
+            <div >
+                <label form="question">5. Consider the picture of a DOM structure below. Which of the following
+                    <b>CANNOT</b> be used to select all the < p> elements?</label><br>
+                </div>
+            <div>
+                <INPUT TYPE="radio" NAME="p">p<br>
+                <INPUT TYPE="radio" NAME="h1~P">h1~p<br>
+                <INPUT TYPE="radio" NAME="article p">article p<br>
+                <INPUT TYPE="radio" NAME="article>p">article > p<br>
+                <INPUT TYPE="radio" NAME="h1 + p">h1 + p<br>
+                </div>
+              <div>
+                    <img src="q5.PNG"/>
+            </div>
+
+            <div>
+                <label form="question">6. Consider the picture of a DOM structure below. Which of the following
+                    <b>CAN</b> be used to select all the < li> elements?</label><br>
+                </div>
+                <div>
+                        <INPUT TYPE="radio" NAME="li">li<br>
+                        <INPUT TYPE="radio" NAME="li:nth-child(2n+1)">li:nth-child(2n+1)<br>
+                        <INPUT TYPE="radio" NAME="ul > li:(2n+1)">ul > li:(2n+1)<br>
+                        <INPUT TYPE="radio" NAME="ul > li">ul > li<br>
+                            <INPUT TYPE="radio" NAME="ul > li(2n+1)">ul > li(2n+1)<br>
+                            </div>
+
+                <div>
+                                <img src="q6.PNG"/><br>
+            </div>
+           
+            <div>
+                <label>7.Douglas College and the Coquitlam campus was named after the Governor and Liutenant-Governor of British Columbia.What are their names? </label> <br/>
+            </div>
+            <div>
+                <textarea rows="3">
+                    </textarea>
+        </fieldset>
+    </article>
+        <footer>
+            <input type="submit" value="Submit My Quiz">
+            <input type="submit" value="Cancel">
+   
+        </footer>
+   
+</body>
+
+</html>
